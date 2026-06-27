@@ -1,0 +1,25 @@
+<h1>Usuários</h1>
+
+{{#each usuarios}}
+
+<p>{{nome}}</p>
+
+<p>{{email}}</p>
+
+<p>{{idade}}</p>
+
+<form
+action="/usuarios/remover/{{id}}"
+method="POST">
+
+<button>
+
+Excluir
+
+</button>
+
+</form>
+
+<hr>
+
+{{/each}}
